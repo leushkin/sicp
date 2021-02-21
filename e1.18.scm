@@ -6,5 +6,5 @@
         ((even? b) (mult-iter acc (double a) (halve b)))
         (else (mult-iter (+ a acc) a (- b 1)))))
 
-(define (* a b)
+(define (mul a b)
   (mult-iter 0 a b))
